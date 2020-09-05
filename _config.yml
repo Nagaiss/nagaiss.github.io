@@ -23,7 +23,7 @@ email:
 description: 
  Nagaiss Blog
 baseurl: "/Nagaiss" # the subpath of your site, e.g. /blog
-url: "http://nagaiss.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://nagaiss.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  Nagaiss
 
