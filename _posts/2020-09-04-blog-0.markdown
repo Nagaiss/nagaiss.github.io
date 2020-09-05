@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "Blog 0, or how to get the Hyde out of Jekyll"
+date:   2020-09-04 17:31:31 -0700
+categories: jekyll update
+---
+Getting this bare-bones website to work took far longer than it should have. To make it easier for whoever reads this post, the following outlines the steps I took to get the website and this blog post running.
+
+First you'll need to make a github repository online, otherwise you'll have nowhere to upload your website or blog posts.
+
+After that, download Ruby, Bundler, Git Bash and Jekyll. You'll need all four of those to properly upload everything to your github repository.
+Once you're finished, create a folder somewhere (I created mine in my Users folder) and clone your repository in to it.
+To do that, open Git Bash and navigate to your chosen folder. Input the following command:
+git clone https://github.com/username/username.github.io where "username" is your github username.
+Change directories to the folder that was just created and type
+
+jekyll new
+
+and you'll have a basic website structure created.
+
+After that, you'll want to set your username and email for pushing purposes.
+To set your username input:
+git config --global user.name "<github username>"
+
+and to set your email input:
+git config user.email "<email that github gives you for pushing purposes>"
+(to find this email, it is under settings in the email catagory)
+
+If you wish to test the functionality of your new website, you can use the bundler software with jekyll by inputting:
+
+bundle exec jekyll serve
+
+and you can check your local IP (Git Bash will give you a URL) to see what the website looks like.
+
+Once you confirm that the website is working, you can upload it to your github repository using the following commands, but be sure to be in the directory with the website:
+git add -all
+git commit -m "<meaningful message indicating what you're uploading here>"
+git push -u origin master
+
+After that you should have your website hosted on github!
+
+Next time we'll go over how to make a blog post, and how to pretty up your website from the default by switching themes.
