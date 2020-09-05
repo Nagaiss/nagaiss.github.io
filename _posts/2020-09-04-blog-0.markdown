@@ -20,10 +20,10 @@ and you'll have a basic website structure created.
 
 After that, you'll want to set your username and email for pushing purposes.
 To set your username input:
-git config --global user.name "<github username>"
+git config --global user.name "(github username)"
 
 and to set your email input:
-git config user.email "<email that github gives you for pushing purposes>"
+git config user.email "(email that github gives you for pushing purposes)"
 (to find this email, it is under settings in the email catagory)
 
 If you wish to test the functionality of your new website, you can use the bundler software with jekyll by inputting:
@@ -34,7 +34,7 @@ and you can check your local IP (Git Bash will give you a URL) to see what the w
 
 Once you confirm that the website is working, you can upload it to your github repository using the following commands, but be sure to be in the directory with the website:
 git add -all
-git commit -m "<meaningful message indicating what you're uploading here>"
+git commit -m "(meaningful message indicating what you're uploading here)"
 git push -u origin master
 
 After that you should have your website hosted on github!
