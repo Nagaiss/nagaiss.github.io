@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "Blog 1, Posting Stuff and Looking Pretty While Doing It"
+date:   2020-09-11 16:33:31 -0700
+categories: jekyll update
+---
+Unfortunately the new website theme is being difficult, so while this blog will cover how to install a new theme for
+your website, I'll need to run some tests to make the new theme doesn't overwrite my current site.
+
+In this example we'll be installing the primer theme.
+First, open your Gemfile and add the theme with the line
+gem "jekyll-theme-primer"
+
+Open Git Bash, be sure you're in the website folder and enter the command:
+gem install "jekyll-theme-primer"
+
+After that, input
+bundle install
+
+then replace your current theme in your _config.yml file with
+theme: jekyll-theme-primer
+
+and test with
+bundle exec jekyll serve
+
+to be sure that the new theme is working.
+
+As for making a new blog post, there should be a "Welcome to Jekyll" post already in your _posts folder. The easiest way
+to start creating new posts is to take the example file, copy it, and fill out the existing format options which include the
+layout, title, date and categories with your custom information you wish to show on your website. 
+
+After you have your new file renamed to fit proper conventions 
+yyyy-mm-dd-title.markdown
+
+you're ready to add, commit and push your new blog file to your GitHub repository.
+
+git add .
+
+Will add the file to the local repository and stage it for commit.
+
+git commit -m "meaningful message"
+Commits all added changes and prepares files to be pushed.
+
+Finally,
+git push origin your-branch
+will push the changes in your local repository to your remote GitHub repository.
+
+Next time, we'll go over some html that I learned in comp 484 last week.
