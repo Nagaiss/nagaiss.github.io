@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "More HTML and Some Docker Commands"
+date:   2020-09-25 17:36:31 -0700
+categories: jekyll update
+---
+Continuing from last post, a few more HTML elements that are important to my current project for Comp 484 are
+map, area, and time. Map and area are always used together, with area being used within a map element. Map is almost always
+used as a foundation for two or more area elements, which indicate certain areas in the map image that are clickable. These
+clickable elements usually link to another webpage/website. The time element on the other hand, is used to translate dates and
+times into a format that machines can read and display. Time can represent a certain time on a twenty four hour clock, a specific
+date in the Gregorian calendar or a time duration.
+
+Lastly, we'll go over a few basic docker commands used in lab one. For example, docker ps -a lists all containers on your
+system that exist. The command docker start (container name) will start a stopped container. docker exec -it (container name)
+bash will bring up an interactive terminal.
+
+This blog post was not very long, but hopefully next time I'll have some things about deployable image files on a docker container
+to talk about. Either that or more HTML elements and attributes.
