@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Understanding Go-JIRA and Ceasing Confusion with CSS"
+date:   2020-10-02 20:39:31 -0700
+categories: jekyll update
+---
+In this update we'll have a brief rundown of JIRA and a small intro into CSS and what it can do.
+
+JIRA, from my limited experience is a management tool used for anything from bug tracking to agile software development. An example
+of its use is time management for a sprint in an agile environment. Team members can be assigned tasks with an estimated amount of time
+it would take to complete a given task. A sprint is a small amount of time that a team is expected to complete a given amount of
+tasks in.
+
+Switching gears, CSS is used to manipulate the appearance of web pages. It doesn't have to be HTML based, but any XML markup language.
+For example, background colors, page layout and fonts can be changed from a single CSS code page. This CSS page will affect all pages of a
+given website that it is attached to. As a small taste of CSS code, the h1 element can have its font size changed in both
+size and type with font: and its color with color:
+
+Next time I may cover more on CSS or maybe projects as they come up.
