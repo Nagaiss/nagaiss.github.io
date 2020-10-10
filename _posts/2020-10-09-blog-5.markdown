@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "More CSS Understanding"
+date:   2020-10-09 18:39:50 -0700
+categories: jekyll update
+---
+This week we'll go over a little more on CSS and how it interfaces with CSS. I learned about a new fix to the HTML box model.
+The fix sets the box-sizing to border-box, which is added to the HTML selector, then asterisk selectors target every single HTML
+element, which ensures all elements inherit the border-box style from the first declaration. The purpose of this fix is to 
+make the padding and border push inward, making a given element remain the same size, with the content shrinking instead.
+
+Another interesting aspect we learned about was padding in both long and shorthand. For shorthand, which is much more simple,
+syntax for one value dictates that that specific value is applied to all sides. Two values have the first value apply to the top
+and bottom of the element, while the second applies to the right and left. Three values have the first value apply to the top, 
+the second applies to the right and left, and the third applies to the bottom of the element. Four values apply in a clockwise pattern
+around the element, starting with the top.
+
+Next time we'll be presenting a prototype resume website for homework, so I may report on how that went.
