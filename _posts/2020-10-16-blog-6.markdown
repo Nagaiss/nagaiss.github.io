@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Does JavaScript Actually have Java in it?"
+date:   2020-10-16 17:52:31 -0700
+categories: jekyll update
+---
+
+This time we will be going over what exactly JavaScript is along with some basic coding for it. 
+Javascript is a scripting language that interscts with HTML and CSS to change what you see and can do on a 
+website. Java and Javascript only have the "java" in their names as a commonality. Javascript was originally
+called Mocha, then renamed to LiveScripts and then to JavaSripts when Netscape and Sun Microsystems made a 
+licensing agreement that included the language. The original plan was to create a scripting language that could
+both work with and cash in on Java's popularity. JavaScript conforms to ECMAScript standard, a spec for interpreting 
+code like JavaScript. JavaScript also has libraries like JQuery, that allows for elaborate work with less code.
+Frameworks for JavaScript also exist, including AngularJS, React and Vue.js. These allow for developers to build apps that 
+generate advanced websites for them. JavaScript platforms like Node.js also exist, and are used to run operations and apps
+on servers and computers using JavaScript.
+
+Some examples of JavaScript code is basic math, like var x = 10; and having x output 10, and having the browser tell what
+date and time it is. For this you have to input var date = new Date(), hold down shift and hit return to create a new line
+then input alert("Today is " + date);
+
+Next time we'll go further into JavaScript along with project information if I get more information on it.
