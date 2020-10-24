@@ -15,12 +15,14 @@ make a directory to work from, like /home/ansible to keep your work in.
 
 Now for the playbook itself, you'll want to create it something like vim. It'll look something like this:
 
- - hosts: all
-   connection: localhost
+ hosts: all
+ connection: localhost
   
    tasks:
-     - name: Install curl
-	   apt: name=curl state=present
+     name: Install curl
+	 apt: name=curl state=present
+	 
+With dashes next to hosts and tasks.
 	  
 After you have your playbook, install it using ansible-playbook with the file name of the playbook in angle
 brackets and it should do the task for you. Next time, we may go over dockerfiles or more ansible.
