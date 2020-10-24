@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Playing with Ansible Playbooks"
+date:   2020-10-23 18:07:31 -0700
+categories: jekyll update
+---
+
+Ansible is a tool that automates the configuration of one or many servers with the use of Ansible playbooks. A playbook
+is an organized group of scripts that defines work for a server configuration managed by the Ansible tool. In this blog
+we will briefly discuss setting up Ansible itself, then writing a playbook that installs curl. 
+
+In this example we'll be using Ubuntu 18.04 as our OS for the docker container that we'll create. After you create your 
+container, run apt update and apt install -y ansible to install Ansible in your container. After that be sure to 
+make a directory to work from, like /home/ansible to keep your work in.
+
+Now for the playbook itself, you'll want to create it something like vim. It'll look something like this:
+
+---
+- hosts: all
+  connection: localhost
+  
+  tasks:
+    - name: Install curl
+	  apt: name=curl state=present
+	  
+After you have your playbook, install it using ansible-playbook <name of the playbook> and it should do the task
+for you. Next time, we may go over dockerfiles or more ansible.
