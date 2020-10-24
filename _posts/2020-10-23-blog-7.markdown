@@ -23,5 +23,5 @@ Now for the playbook itself, you'll want to create it something like vim. It'll 
     - name: Install curl
 	  apt: name=curl state=present
 	  
-After you have your playbook, install it using ansible-playbook <name of the playbook> and it should do the task
-for you. Next time, we may go over dockerfiles or more ansible.
+After you have your playbook, install it using ansible-playbook with the file name of the playbook in angle
+brackets and it should do the task for you. Next time, we may go over dockerfiles or more ansible.
