@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Tangling with Tamagotchi: A Look at JQuery and Javascript"
+date:   2020-09-04 17:53:33 -0700
+categories: jekyll update
+---
+
+Next week I'll be making an app based on the Tamagotchi, which was a tiny plastic egg
+that served as a pet-care simulator for users. Such apps now exist on mobile devices
+and any would-be Javascript programmer can create one. For this project, I'll be using
+the JQuery library as a requirement. The library is supposed to make things like event
+handling and animation easier, which will be helpful as the app requires both to function
+properly.
+
+For example, one of the functions written updates the HTML with the current values in the
+not yet written dictionary. As you can see here:
+
+{% highlight javascript %}
+ function updatePetInfoInHtml() {
+  $('.name'}.text(pet_info['name']);
+  $('.weight').text(pet_info['weight']);
+  $('.happiness').text(pet_info['happiness']);
+{% endhighlight %}
+
+This will update a variable with the name of the Tamagotchi, the weight number, and the 
+happiness number of the pet.
+
+As this project was just issued a day ago, not much has been done with it as of this moment.
+However, next week should see a completed project with a fully functional pet. As such, I will
+most likely make the next blog highlighting various inner functions of the pet and how they all
+work together.
