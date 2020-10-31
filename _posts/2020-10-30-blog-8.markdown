@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tangling with Tamagotchi: A Look at JQuery and Javascript"
-date:   2020-09-04 17:53:33 -0700
+date:   2020-10-30 17:53:33 -0700
 categories: jekyll update
 ---
 
