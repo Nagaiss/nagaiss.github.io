@@ -1,0 +1,63 @@
+---
+layout: post
+title:  "Tamagotchi Web App End Result"
+date:   2020-11-06 17:32:31 -0700
+categories: jekyll update
+---
+This week was the due date for the completed Tamagotchi type app. The end product turned out
+well, if a bit bare bones. However, the app was built to spec, and everything asked for
+was fulfilled. I'll be going over some code fragments which were vital in the success of the
+project.
+
+This fragment utilizes jquery to call for functions for a selection of buttons:
+{% highlight javascript %}
+    $('.treat-button').click(clickedTreatButton);
+    $('.play-button').click(clickedPlayButton);
+    $('.exercise-button').click(clickedExerciseButton);
+    $('.cleanliness-button').click(clickedCleanlinessButton);
+{% endhighlight %}
+
+This fragment is a function that activates when the treat button is clicked.
+{% highlight javascript %}
+function clickedTreatButton() {
+   // Increase pet happiness
+   pet_info.treatHappy();
+   // Increase pet weight
+   pet_info.treatWeight();
+   // Reduce cleanliness
+   pet_info.treatCleanliness();
+
+   checkAndUpdatePetInfoInHtml();
+ }
+{% endhighlight %}
+The function at the end calls two more functions that check for negative values of happiness
+and weight and resets said negative values to zero. The second function updates the values of
+the Tamagotchi info in the HTML page.
+
+The following code fragments outline the two functions that check the pet info:
+{% highlight javascript %}
+function checkWeightAndHappinessBeforeUpdating() {
+    // Add conditional so if weight/happiness is lower than zero, set it back to zero
+    if (pet_info.weight <= 0 ){
+      pet_info.setWeightZero();
+    }
+    if (pet_info.happiness <= 0 ){
+      pet_info.setHappyZero();
+    }
+    if (pet_info.cleanliness <= 0){
+      pet_info.setCleanlinessZero();
+    }
+  }
+  
+  // Updates your HTML with the current values in your pet_info dictionary
+function updatePetInfoInHtml() {
+  $('.name').text(pet_info['name']);
+  $('.weight').text(pet_info['weight']);
+  $('.happiness').text(pet_info['happiness']);
+  $('.cleanliness').text(pet_info['cleanliness']);
+}
+{% endhighlight %}
+
+The other functions that set numerical values to zero or increase/decrease values
+involve the use of plus or minus equals conditionals or a single equal sign that sets the 
+value of an element to zero.
