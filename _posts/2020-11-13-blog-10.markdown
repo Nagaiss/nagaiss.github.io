@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "AWS Instance Setup Basics"
+date:   2020-11-13 19:17:31 -0700
+categories: jekyll update
+---
+
+In this blog, we will cover launching an AWS EC2 instance. First off, you'll need an AWS
+account. A free tier is available which allows for 750 hours of t2 micro instance uptime
+per month, which is very handy for experimentation. After you have an account, you'll need to
+choose an AMI, or a machine image. There are many to choose from, but for this particular case
+we'll assume an ubuntu 18.04 image has been chosen.
+
+After choosing an image, you'll want to choose an instance. There are also many to choose from,
+but in this case we'll choose the free tier eligible micro t2.
+
+You'll want to configure a security group for your instance, or attach an already existing one 
+to your new instance. However, in this circumstance you probably don't have one. An easy way to set up
+your security group is to have port 80 or the HTTP port open along with port 22, which is SSH, open only to your local machine. There
+should be an option that allows for AWS to automatically detect your IP address to add as the only allowed IP for SSH
+connection. 
+
+After you have your security group set up, you'll want to generate a key pair for your instance. You must have one, for
+if not, you will be unable to connect to your instance. After that, your instance should be ready for launch. Wait a moment
+for your instance to start running and you will be ready to connect to it.
+
+If you are running a linux or macOS machine, you can use your built in SSH client to connect to your new instance with
+the provided public DNS name. However, if you are running a Windows instance, you'll need to use PuTTY or another
+SSH client for Windows to connect to your instance.
+new instance.
+
+And that's it, your instance should be able to be remotely accessible by you and is ready to be used for your purposes.
+
