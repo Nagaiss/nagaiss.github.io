@@ -1,0 +1,40 @@
+---
+layout: post
+title:  "Take Time with Timed Typing"
+date:   2020-11-20 18:13:31 -0700
+categories: jekyll update
+---
+In this blog we'll be discussing a bit about the most recent project I am currently working on. It is a typing
+test app which promotes the use of event listeners to detect typing in a text box to start a timer. After matching 
+what you type with the quote you are given, The color of the box surrounding your typed text lights up green and the timer
+stops.
+
+An example of some of the code will be below:
+
+{% highlight javascript %}
+testArea.addEventListener("keypress", start, false);
+testArea.addEventListener("keyup", spellCheckr, false);
+resetButton.addEventListener("click", reset, false);
+{% endhighlight %}
+This code checks for text in the typing area along with activating the reset button.
+
+{% highlight javascript %}
+function spellCheckr() {
+  let textEnter = testArea.value;
+  let originMatch = originText.substring(0,textEnter.length);
+  
+  if (textEnter == originText) {
+     clearInterval(interval);
+     testWrapper.style.borderColor = "#0ED61C"; //green complete
+  } else {
+    if (textEnter == originMatch) {
+       testWrapper.style.borderColor = "#1B40CF"; //blue incomplete
+    } else {
+      testWrapper.style.borderColor = "#C81616"; //red wrong
+    }
+  }
+  console.log(textEnter);
+}
+{% endhighlight %}
+This function checks for matching text with the given quote to type and changes the color of the border depending on
+errors that may be present.
