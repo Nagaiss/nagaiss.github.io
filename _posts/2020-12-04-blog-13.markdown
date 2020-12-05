@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "The Last Blog: Getting Lost With Google Maps"
+date:   2020-12-04 20:39:31 -0700
+categories: jekyll update
+---
+This is the final blog for the Fall semester. For one of the last projects I am working with Google Maps to make a
+kind of quiz game where you double click where a stated location is and it lights up green if correct or lights
+up another location in red where the location really is. In this particular case, this code will create a map that's
+centered on CSUN.
+
+{% highlight javascript %}
+let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 34.2383, lng: -118.5237 },
+    zoom: 8,
+  });
+}
+{% endhighlight %}
+
+It has been one hell of a semester with everything online, but hopefully everyone will figure things out and
+get to graduating on time. In the meantime, I'll be thinking on what to do for next semester's group project.
