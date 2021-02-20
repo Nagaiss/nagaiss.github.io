@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Blog 14, or how how things aren't over yet"
+date:   2021-02-19 16:31:31 -0700
+categories: jekyll update
+---
+Greetings again. We're back in the new year with more blogs. I feel that we should start with the new idea for my group's
+overarching project that we will be doing for the entire semester. Our idea is a self-hosted chat application which will
+allow for users to have a product where they can control their own data for personal security purposes. The plan is to use
+terraform, ansible and docker to deploy AWS infrastructure, configure the instance for hosting the chat server, and to
+automate and deploy the chat service where it will be hosted in a container respectively.
+
+We will have a more fleshed out presentation for our project in the coming days leading to next week. After that day comes, I'll post
+more about it.
