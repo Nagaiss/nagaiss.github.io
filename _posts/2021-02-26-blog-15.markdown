@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Blog 15, or No Exciting News to Report"
+date:   2020-02-26 22:39:31 -0700
+categories: jekyll update
+---
+Our first presentation was this week Thursday. I think it went over well, but we need an actual diagram that presents
+our infrastructure properly. We'll need to display seperate networks, load balancers, and proper CIDR labeling if possible.
+I think this will be a single server setup though, so it shouldn't be very complicated.
+
+I wish I had more to write about, but other than the preliminary stuff, there's been nothing important to report about.
+Maybe when we actually get the diagram and some code going, I'll have more to talk about.
