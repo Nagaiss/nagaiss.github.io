@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Blog 16, or I Should Really Find Talking Points"
+date:   2021-03-05 15:39:31 -0700
+categories: jekyll update
+---
+Our team project is rather slow going atm. I'm not sure who's supposed to be doing what, but if it comes down to it
+I just might start trying to slap this thing together myself. So this blog will probably be about what exactly I'll
+have to do to get started. I still have my AWS free tier account, which I'm hoping will be enough to host an instance of
+one of our chat servers. I'm also going to have to find some kind of free/cheap diagram software for a proper diagram of
+our server infrastructure. I'll also have to take a closer look at rocket chat as well.
+
+I wish I had some code to share, but as of right now there's nothing. I'll definitely have to speak with Professor Smith
+about what I should do.
