@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Blog 17: or AWS Free Tier Tips"
+date:   2021-03-12 21:39:31 -0700
+categories: jekyll update
+---
+We still haven't done very much regarding our project, but I figured I'd list one of the pitfalls I've had regarding
+AWS free tier payments. They only support like one micro server type, and if you use anything else and just leave it running
+you'll find yourself being charged hundreds of dollars in a short amount of time. So be sure to shut down or terminate instances
+once you're finished using them.
+
+Also, if you're deploying S3 buckets, be careful with those too since using too much storage will also cause charges towards your
+account as well.
