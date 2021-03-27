@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Finally Some Direction on the Project Front"
+date:   2020-03-26 19:39:31 -0700
+categories: jekyll update
+---
+I finally have some direction regarding what I should be doing for our project. I was partially looking at both terraform and
+ansible in anticipation on working with either one, and it turns out I'll be handling infrastructure with a terraform script that
+will set up two or more AWS servers. That should be reasonable enough, but I've been handed the additional challenge of having ansible
+installed on new server instances which will take a bit of wriggle work. But now I have something to aim at, so work should proceed rapidly.
+I hope to have more to say on the matter in the following week.
