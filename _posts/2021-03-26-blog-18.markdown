@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Finally Some Direction on the Project Front"
-date:   2020-03-26 19:39:31 -0700
+date:   2021-03-26 19:39:31 -0700
 categories: jekyll update
 ---
 I finally have some direction regarding what I should be doing for our project. I was partially looking at both terraform and
