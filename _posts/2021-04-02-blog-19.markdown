@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "More on Terraform"
+date:   2021-04-02 19:39:31 -0700
+categories: jekyll update
+---
+After discussing plans with the rest of the team, it's been decided that I work on setting up a terraform script to
+automatically set up multiple AWS servers to host our ansible scripts and the RocketChat client itself. I've got terraform
+able to set up two servers simultaneously, but now I have to have ansible installed on the servers as well, or the ansible
+scripts won't work. I'll be pushing what I have to the repo shortly.
