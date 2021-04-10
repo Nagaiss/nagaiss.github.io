@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Even More Terraform!"
+date:   2021-04-09 20:39:31 -0700
+categories: jekyll update
+---
+So a basic terraform config must be hosted in its own working directory. What my config is going to look like is pretty much
+three blocks of code. Those blocks are the terraform block with the terraform settings, the provider block with config
+for a specific provider listed in the terraform block, and the resource block which defines components of infrastructure that
+could be physical/virtual like a server instance or logical like an app.
+
+One last thing, when config is applied, terraform writes data into a state file where it tracks what resources it needs to
+manage. This file is very sensitive and needs to be protected from manipulation.
