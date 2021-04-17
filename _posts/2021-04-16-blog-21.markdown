@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "A bit on Rocketchat and docker-compose"
+date:   2021-04-16 16:39:31 -0700
+categories: jekyll update
+---
+So recently we found how to automate deployment of docker containers for our rocketchat app.
+All we'll need is the docker-compose yml file that we'll boot up with the docker-compose command.
+What should happen is a MongoDB service should start, rocketchat service should start when mongo is ready, and
+a hubot service should also start as well.
+We'll have the yml file up on the repo once we finish making it.
