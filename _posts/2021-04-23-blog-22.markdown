@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "How About More Terraform Updates"
+date:   2021-04-23 19:39:31 -0700
+categories: jekyll update
+---
+The terraform script worked as intended. Using variable data, it can start as many EC2 instances
+as it needs to with powershell commands. The next and probably final step is to have all EC2 instances start with
+Ansible installed on initialization. This will be slightly more complex as I believe Ansible requires Ubuntu with a
+version past 18. 
+
+Our project is nearing completion and all that will remain is all the pieces coming together to make a working application.
