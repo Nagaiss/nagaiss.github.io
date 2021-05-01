@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "The End is Near"
+date:   2021-04-30 21:39:31 -0700
+categories: jekyll update
+---
+Not too much to share this week. There was a bit of an issue with Amazon thinking that my account was compromised
+so I switched the passwords up. I suppose that's one thing to share about. Password security is very important, and
+you'd probably be well off switching them up every so often. For the very last blog I'll have most of the terraform
+script listed as an example of a script.
