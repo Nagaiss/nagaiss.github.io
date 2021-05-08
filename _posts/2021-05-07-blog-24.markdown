@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Some Terraform Code: One More Week"
+date:   2021-05-07 16:39:31 -0700
+categories: jekyll update
+---
+Just a little more to go. For this blog I wanted to go over a small bit of terraform code.
+
+{% highlight terraform %}
+resource "aws_instance" "app_server" {
+  count         = var.instance_count
+  ami           = "ami-830c94e3"
+  instance_type = "t2.micro"
+{% endhighlight %}
+
+The count data field listed above has a var identifier attached to a custom variable that I set up on a variable tf file
+in the same directory. Also not listed is a user_data field that will be used to boot up ansible on initialization.
+
+It should be straightforward job to slap all components of our project together and have a app to show off. Everything will
+be finished soon.
